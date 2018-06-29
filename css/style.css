@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 28, 2018, 10:23:18 AM
+    Author     : mithu
+*/
+
+html,body{}
+.menu-toggle{
+    z-index: 99999;
+    opacity: 0.5;
+}
+.menu-toggle:hover{
+    opacity: 1;
+}
+.sidebar-wrapper{
+    right: -280px;
+    z-index: 9;
+    top: 0;
+    transition: right 0.5s;
+    background-image: url("../images/nav.jpeg");
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mySidebar{
+    padding: 10px 20px;
+    width: 12rem;
+    background: rgba(0,0,0,0.4);
+    border-bottom: 1px solid chocolate;
+    transition: background 0.3s;
+}
+.mySidebar:hover{
+    background: rgba(0,0,0,0.8);
+}
+.mySidebar:hover a{
+    color: white !important;
+}
+.banner{
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100vh;
+}
+video{
+    background: red;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+}
+.embed-responsive-4by3:before{
+    padding-top: 56.3% !important;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    background: url("../images/dark_mosaic.png") center center;
+    opacity: 0.5;
+}
+@media (min-width: 992px){
+    video, .overlay{
+        top: -250px !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px){
+    video, .overlay{
+        top: -100px !important;
+    }
+}
