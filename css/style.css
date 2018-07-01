@@ -43,35 +43,170 @@ html,body{}
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 100vh;
+    background-image: url("../img/bg-masthead.jpg");
+    background-position: left top;
+    background-size: cover;
 }
-video{
-    background: red;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
+.myText h1{
+    font-family: 'Galada', cursive;
 }
-.embed-responsive-4by3:before{
-    padding-top: 56.3% !important;
+button{
+    font-family: 'Shrikhand', cursive;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 3rem !important;
 }
-.overlay{
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    position: absolute;
-    background: url("../images/dark_mosaic.png") center center;
-    opacity: 0.5;
+.myText h1{
+    background-image: url("../images/borderSmall.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
-@media (min-width: 992px){
-    video, .overlay{
-        top: -250px !important;
+.myText p{
+    font-size: 0.9rem;
+}
+.myMiddle{
+    opacity: 1 !important;
+    background: black;
+    color: white !important;
+}
+.myMiddle button{
+    font-family: 'Shrikhand', cursive;
+}
+.myMiddle h1{
+    font-family: 'Galada', cursive;
+}
+.infoText{
+    background: url("../images/bgnoise_lg_@2X.png") repeat center center;
+}
+.infoText button{
+    border-left: 1px solid #343A40;
+    border-top: 1px solid #343A40;
+}
+.service{}
+.service h1{
+    font-family: 'Shrikhand', cursive;
+    background: url("../images/borderLong.png") no-repeat left bottom;
+}
+.service h2{
+    font-family: 'Galada', cursive;
+}
+.next{
+    background: url("../img/bg-callout.jpg") no-repeat left top;
+}
+.next h1{
+    background: url("../images/borderLong.png") no-repeat left bottom;
+    font-family: 'Galada', cursive;
+}
+.feature{
+    width: 300px;
+    height: 300px;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    overflow: hidden;
+}
+.portfolio{
+    background: url("../images/squairy_light_@2X.png");
+}
+.portfolio h1{
+    background: url("../images/borderSmall.png") no-repeat center bottom;
+    font-family: 'Galada', cursive;
+}
+.myPort div:nth-child(1){
+    background: url("../images/port1.jpeg") no-repeat center center;
+}
+.myPort div:nth-child(2){
+    background: url("../images/port2.jpeg") no-repeat center center;
+}
+.myPort div:nth-child(3){
+    background: url("../images/port3.jpeg") no-repeat center center;
+}
+.myPort div:nth-child(4){
+    background: url("../images/port4.jpeg") no-repeat center center;
+}
+.feedback{
+    background: url("../images/feedback.jpeg") no-repeat center 40%;
+}
+.feedback h1{
+    font-family: 'Galada', cursive;
+}
+.feedback button{
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+.feedback i{
+    cursor: pointer;
+}
+.feedback i:hover{
+    background: #999999;
+}
+.googleMap{}
+.myFooter{}
+.social li{
+    cursor: pointer;
+}
+.social li:hover{
+    background: chocolate !important;
+}
+
+/*========BOOTSTRAP PADDING=====*/
+.p-6{
+    padding: 6rem !important;
+}
+.p-7{
+    padding: 7rem !important;
+}
+.p-8{
+    padding: 8rem !important;
+}
+.px-6{
+    padding: 0 6rem !important;
+}
+.px-7{
+    padding: 0 7rem !important;
+}
+.px-8{
+    padding: 0 8rem !important;
+}
+.py-6{
+    padding: 6rem 0 !important;
+}
+.py-7{
+    padding: 7rem 0 !important;
+}
+.py-8{
+    padding: 8rem 0 !important;
+}
+/*========MEDIA=======*/
+
+@media (max-width: 320px){
+    .myText, .myText2{
+        font-size: 1rem !important;
     }
 }
-@media (min-width: 576px) and (max-width: 991px){
-    video, .overlay{
-        top: -100px !important;
+@media (min-width: 321px){
+    .myText{
+        font-size: 1.7rem !important;
+    }
+}
+@media (min-width: 768px){
+    .myText{
+        font-size: 2rem !important;
+    }
+    .myText2{
+        font-size: 1.5rem !important;
+    }
+    .myPort{
+        padding: 5rem !important;
+    }
+}
+@media (min-width: 769px){
+    .myText{
+        font-size: 2.5rem !important;
+    }
+}
+@media (min-width: 1200px){
+    .service{
+        padding: 7rem;
     }
 }
